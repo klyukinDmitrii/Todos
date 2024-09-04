@@ -1,0 +1,53 @@
+body {
+	background: linear-gradient(
+		90deg,
+		rgba(222, 73, 212, 0.8449973739495799) 1%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+.app {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	width: 25px;
+	height: 25px;
+	border: 5px solid gray;
+	border-radius: 50px;
+	border-left-color: transparent;
+	animation: loading 1s infinite;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+h1 {
+	text-align: center;
+}
+
+ul li {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-left: 10px;
+	background: linear-gradient(
+		90deg,
+		rgba(36, 0, 35, 1) 0%,
+		rgba(222, 73, 212, 0.8449973739495799) 1%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	list-style-type: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
